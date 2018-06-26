@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Express Yourself with GIFs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Express Yourself with GIFs</h1>
+    </header>
+    <main>
+        <div id="additional-options">
+            <h4>Viewing Options</h4>
+            <div class="button-group">
+                    <button id="even-rows" class="button-depressed">Fixed Height in Rows</button>
+                    <button id="even-columns">Fixed Width in Columns</button>
+            </div>
+            <div class="button-group">
+                    <button id="still-by-default" class="button-depressed">Generate Still Images</button>
+                    <button id="moving-by-default">Generate Moving Images</button>
+            </div>
+            <fieldset id="clean-up">
+                <h4>Clean-up</h4>
+                <button id="clear-images">Clear All GIFs</button>
+                <button id="reset-search-buttons">Reset to Default Buttons</button>
+            </fieldset>
+            <fieldset id="add-search-button">
+                <span><label for="search-box">Create a new search button by typing in the box and hitting enter</label><input id="search-box" type="text"></span>
+            </fieldset>
+            <h4>Create More GIFs with the Buttons:</h4>
+        </div>
+        <div id="search-buttons" class="flex-container">
+            <!-- main.js dynamically supplies buttons here. -->
+        </div>
+        <div id="results" class="flex-container">
+            <!-- main.js dynamically adds images and associted data here. -->
+        </div>
+    </main>
+</body>
+
+</html>

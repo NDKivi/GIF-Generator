@@ -1,0 +1,164 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #00344d;
+    color: #E8E8E8;
+    text-align: center;
+}
+
+header > h1 {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+main {
+    background-color: #ccefff;
+    width: 770px;
+    margin: auto;
+    border: #00344d 3px solid;
+    border-top: none;
+}
+
+button {
+    font-size: 1rem;
+    border-radius: .5rem;
+    margin: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: #993300;
+    color: #E8E8E8;
+}
+
+fieldset {
+    margin-top: .5rem;
+    background-color: #007ab3;
+}
+
+h4, fieldset label {
+    padding: .5rem;
+    font-size: 1.3rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.button-group {
+    margin-bottom: .5rem;
+    margin-left: 0.5rem;
+}
+
+.button-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.button-group button {
+    background-color: #993300;
+    color: #E8E8E8;
+    border: 1px solid black;
+    float: left;
+    margin:0;
+    border-radius: 0 0 0 0;
+}
+
+button:hover {
+    background-color: #4d1a00;
+}
+
+.button-group button:not(:last-child) {
+    border-right: none;
+}
+
+.button-group button:first-child {
+    border-radius: 0.5rem 0 0 .5rem;
+}
+
+.button-group button:last-child {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.button-depressed {
+    background-color: #331100!important;
+    color: #E8E8E8!important;
+    cursor: default;
+}
+
+.image-card {
+    margin: 3px;
+}
+
+div#additional-options > h4 {
+    color: #4d1a00;
+}
+
+div#search-buttons {
+    background-color: #ccefff;
+    justify-content: left;
+}
+
+div#results {
+    background-color: #e6f7ff;
+    justify-content: center;
+}
+
+#results p {
+    color: #4d1a00;
+}
+
+#search-box {
+    margin: 0.5rem;
+}
+
+#add-search-button {
+    background-color: #ccefff;
+    color: #4d1a00;
+}
+
+#clean-up {
+    color: white;
+}
+
+.image-card a {
+    display: block;
+    color: #4d1a00;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    main {
+        width: 100%;
+        border: 0;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    
+    button {
+        font-size: 0.8rem;
+    }
+    
+    .button-group {
+        margin-left: 0.3rem;
+    }
+    
+    h4, fieldset label {
+        padding: .3rem;
+        font-size: 1rem;
+    }
+
+    #results p {
+        font-size: .4rem;
+    }
+
+    header > h1 {
+        font-size: 1.5rem;
+    }
+}
